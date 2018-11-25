@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,31 +6,61 @@
   </head>
   <body>
    <header class="main-header">
-	<h1 class="device-header"><a class="main-header-logo">DEVICE</a></h1>
+	<h1 class="device-header"><a class="main-header-logo" href="index.html">DEVICE</a></h1>
 	<nav class="main-navigation">
-		<ul class="navigation-search">
-			<li>Поиск по сайту</li>
-		</ul>
-
+		<form class="search">
+      <label for="search"><!--SVG форма поиска--></label>
+      <input type="text" name-"searchbar" id="search" placeholder="Поиск по сайту">
+    </form>
 		<ul class="navigation-catalog">
-			<li><a href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
+			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
 		</ul>
+      
+    <!--Тут должен быть POPUP -->
+    <button class="button-catalog" type="button">POPUP-BUTTON</button>
+
+    <ul class="popup-header">
+      <li class="popup-object">
+        <a href="#">Вирутальная реальность</a>
+      </li>
+      <li class="popup-object">
+        <a href="#">Моноподы для селфи</a>
+      </li>
+      <li class="popup-object">
+        <a href="#">Экшн-камеры</a>
+      </li>
+      <li class="popup-object">
+        <a href="#">Фитнес-браслеты</a>
+        </li>
+      <li class="popup-object">
+        <a href="#">Умные часы</a>
+      </li>
+      <li class="popup-object">
+        <a href="#">Квадрокоптеры</a>
+      </li> 
+    </ul>
 
 	  <ul class="navigation-top">
-	  	<li class="login-link">Войти</li>
-	  	<li><a href="comparison.html"></a>Сравнить</li>
-	  	<li><a href="busket.html"></a>Корзина</li>
+	  	<li><a class="login-link" href="login.html">Войти</a></li>
+	  	<li><a href="comparison.html">Сравнить</a></li>
+	  	<li><a href="busket.html">Корзина</a></li>
 	  </ul>
 
 	  <ul class="navigation-bottom">
-	  	<li><a href="delivery.html"></a>ДОСТАВКА</li>
-	  	<li><a href="terms-and-conditions.html"></a>ГАРАНТИЯ</li>
-	  	<li><a href="contacts.html"></a>КОНТАКТЫ</li>
+	  	<li><a href="delivery.html">ДОСТАВКА</a></li>
+	  	<li><a href="terms-and-conditions.html">ГАРАНТИЯ</a></li>
+	  	<li><a href="contacts.html">КОНТАКТЫ</a></li>
 	  </ul>
 	</nav>
    </header>
 
    <main class="container">
+    <h1 class="visually-hidden">Мононподы для селфи</h1>
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="catalog.html">Каталог товаров</a></li>
+    <li class="breadcrumbs-current">Моноподы для селфи</li>
+  </ul>
 
 	<!-- ПОМЕЧЕНО КРАСНЫМ, ПОКА НЕ РАЗМЕЧАТЬ -->
 	
@@ -68,21 +98,55 @@
     	<a class="feedback" href="feedback.html">НАПИШИТЕ НАМ</a>
     </p>
    </section>
+
+  </section>
+
+  <!--Форма "Напишите нам" -->
+  <section class="feedback">
+    <form class="feedback-form" action="" method="post">
+      <p class="feedback-name-bar">
+       <label for="feedback-name">Ваше имя:</label><br>
+      <input type="text" name="name" value="" id="feedback-name" placeholder="Имя Фамилия" required>
+      </p>
+
+      <p class="feedback-email-bar">
+        <label for="feedback-email">Ваш e-mail:</label><br>
+        <input type="email" name="email" value="" id="feedback-email" placeholder="email@example.com" required>
+      </p>
+
+       <label class="feedback-area" for="textarea-form">Текст письма:</label><br>
+      <textarea class="feedback-area-bar" placeholder="В свободной форме" name="text-area" id="textarea-form"  required>    
+      </textarea><br>
+
+      <button class="button" type="submit">Отправить</button>
+      <button class="button-close" type="button">Закрыть</button>
+    </form>
+  </section>
+
+  <!-- "Как до нас добраться" pop-up-->
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/map-big.jpg" width="960" height="559" alt="улица Строителей, 15"><br>
+
+   <button class="button-close" type="button">Закрыть</button>
+  </section>
+
    </main>
 
  <footer class="main-footer">
 
-	<span class="footer-device-logo"><a>DEVICE</a></span>
+	<span class="footer-device-logo"><a href="index.html">DEVICE</a></span>
 
 	<p>
-		г. Москва, ул. Строителей, 15 <br>
-		Тел.: +7(495)495-95-95
+		<span class="footer-text-left"> г. Москва, ул. Строителей, 15</span> <br>
+		<span class="footer-text-right">Тел.: +7(495)495-95-95</span>
 	</p>
 
     <ul class="footer-middle">
-    	<li><a href="delivery.html"></a>ДОСТАВКА</li>
-    	<li><a href="terms-and-conditions.html"></a>ГАРАНТИЯ</li>
-    	<li><a href="contacts.html"></a>КОНТАКТЫ</li>
+    	<li><a href="delivery.html">ДОСТАВКА</a></li>
+    	<li><a href="terms-and-conditions.html">ГАРАНТИЯ</a></li>
+    	<li><a href="contacts.html">КОНТАКТЫ</a></li>
     </ul>
 
     <ul class="footer-social">
@@ -92,9 +156,9 @@
   	</ul>
 
   	<ul class="footer-left">
-  		<li><a href=""></a>Войти</li>
-  		<li><a href="comparison.html"></a>Сравнить</li>
-  		<li><a href="busket.html"></a>Корзина</li>
+      <li><a class="login-link" href="login.html">Войти</a></li>
+      <li><a href="comparison.html">Сравнить</a></li>
+      <li><a href="busket.html">Корзина</a></li>
   	</ul>
 
   	<a class="footer-logo" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="htmlacademy.ru"></a>
