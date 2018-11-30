@@ -1,0 +1,281 @@
+
+
+body {
+	margin:0;
+	padding:0;
+
+	font-family: "Gilroy", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 18px ;
+	line-height: 24px;
+	color: #000000;
+	background-color: #f7e296;
+}
+
+.navigation-top {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	color: #000000;
+	
+}
+
+
+
+.triger-popup,
+.navigation-bottom{
+	font-weight: 800;
+	letter-spacing: 3px;
+}
+
+.device-header a {
+	color: #000000;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.navigation-catalog,
+.popup-header,
+.navigation-top,
+.navigation-bottom {
+	list-style: none;
+}
+
+.navigation-catalog a,
+.popup-header a,
+.navigation-top a,
+.navigation-bottom a {
+	color: #000000;
+} 
+
+
+.device-header a:hover,
+.device-header a:focus,
+.navigation-catalog a:hover,
+.navigation-catalog a:focus,
+.popup-header a:hover,
+.popup-header a:focus,
+.navigation-top a:hover,
+.navigation-top a:focus,
+.navigation-bottom a:hover,
+.navigation-bottom a:focus
+
+ {
+	opacity: 0.6;
+}
+
+
+.about h2,
+.contacts h2 {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.about p,
+.contacts p {
+	font-family: "Open Sans";
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	color: #464646;
+}
+
+.services-list {
+
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.more-info,
+.feedback-link {
+	font-family: "Gilroy";
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18px;
+	line-height: : 24px;
+	color: #000000;
+	font-weight: 800;
+	letter-spacing: 3px;
+	background-color: #ffc600;
+}
+
+.button {
+	font-family: "Gilroy";
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18px;
+	line-height: : 24px;
+	color: #000000;
+	font-weight: 800;
+	letter-spacing: 3px;
+	background-color: #ffc600;
+}
+
+.main-footer {
+	color: #ffffff;
+	background-color: #464646;
+}
+
+.main-footer a {
+	color: #ffffff;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+	opacity: 0.6 ;
+}
+
+.main-footer ul {
+	list-style: none;
+}
+
+.footer-device-logo a {
+	color: #ffc600;
+	font-family: "Gilroy";
+	font-size: 48px;
+	font-weight: 800;
+}
+
+.footer-social {
+	text-align: center;
+}
+.footer-social a{
+	opacity: 0.3;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+	opacity: 0.6;
+}
+
+.footer-middle {
+	text-align: center;
+	font-weight: 800; 
+}
+
+.footer-text-right,
+.footer-text-left {
+font-family: "Open Sans";
+font-size: 15px;
+line-height: 30px;
+font-weight: 300;
+}
+
+.footer-left a {
+	font-size: 15px;
+	line-height: 36px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	opacity: 0.7;
+}
+
+.footer-left a:hover,
+.footer-left a:focus
+ {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/*
+СТИЛИ КАТАЛОГА
+*/
+.monopods {
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+}
+
+.breadcrumbs li{
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+
+	list-style: none;
+
+	color: #000000;
+}
+.breadcrumbs-current {opacity: 0.3;}
+.breadcrumbs a {opacity: 0.3;}
+
+.breadcrumbs a:hover {
+	opacity: 0.6
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+
+.filter-input-checkbox:disabled + label {
+  color: #a6a6a6;
+
+}
+
+.filter-background-color {
+	background-color: #eeeeee;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-item-price b {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #464646;
+  font-weight: 300;
+}

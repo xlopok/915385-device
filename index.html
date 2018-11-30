@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
    <header class="main-header">
@@ -10,7 +14,7 @@
 	<nav class="main-navigation">
 		<form class="search">
       <label for="search"><!--SVG форма поиска--></label>
-      <input type="text" name-"searchbar" id="search" placeholder="Поиск по сайту">
+      <input type="text" name="searchbar" id="search" placeholder="Поиск по сайту">
     </form>
 		<ul class="navigation-catalog">
 			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
@@ -55,12 +59,6 @@
    </header>
 
    <main class="container">
-    <h1 class="visually-hidden">Мононподы для селфи</h1>
-  <ul class="breadcrumbs">
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог товаров</a></li>
-    <li class="breadcrumbs-current">Моноподы для селфи</li>
-  </ul>
 
 	<!-- ПОМЕЧЕНО КРАСНЫМ, ПОКА НЕ РАЗМЕЧАТЬ -->
 	
@@ -73,7 +71,7 @@
   	 России! DEVICE работает со многими транспортными компаниями. </p>
 
   	 <h3 class="visually-hidden">Сервисы</h3>
-  	   <ul class="servises-list">
+  	   <ul class="services-list">
   	   	 <li>Деловые Линии</li>
   	   	 <li>Авторейдинг</li>
   	   	 <li>ЖелДорЭкспедиция</li>
@@ -91,19 +89,17 @@
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br> проверить работоспособность покупки. Всякое бывает.</p>
 
     <p>
-    	<img src="img/map.jpg" alt="улица Строителей, 15" width="560 px" height="222 px">
+    	<img src="img/map.jpg" alt="улица Строителей, 15" width="560" height="222">
     </p>
 
     <p>
-    	<a class="feedback" href="feedback.html">НАПИШИТЕ НАМ</a>
+    	<a class="feedback-link" href="feedback.html">НАПИШИТЕ НАМ</a>
     </p>
    </section>
 
-  </section>
-
-  <!--Форма "Напишите нам" -->
+  <!--Форма "Напишите нам" --> 
   <section class="feedback">
-    <form class="feedback-form" action="" method="post">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="feedback-name-bar">
        <label for="feedback-name">Ваше имя:</label><br>
       <input type="text" name="name" value="" id="feedback-name" placeholder="Имя Фамилия" required>

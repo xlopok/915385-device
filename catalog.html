@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Catalog</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
    <header class="main-header">
@@ -10,11 +14,11 @@
 	<nav class="main-navigation">
 	    <form class="search">
          <label for="search"><!--SVG форма поиска--></label>
-         <input type="text" name-"searchbar" id="search" placeholder="Поиск по сайту">
+         <input type="text" name="searchbar" id="search" placeholder="Поиск по сайту">
         </form>
 
 		<ul class="navigation-catalog">
-			<li><a href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
+			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
 		</ul>
 
  <!--Тут должен быть POPUP -->
@@ -56,7 +60,7 @@
   </header>
 
   <main class="container">
-	<h1>Мононподы для селфи</h1>
+	<h2 class="monopods">Мононподы для селфи</h2>
 	<ul class="breadcrumbs">
 		<li><a href="index.html">Главная</a></li>
 		<li><a href="catalog.html">Каталог товаров</a></li>
@@ -67,9 +71,10 @@
 
 	<!-- Стоимость. ОТМЕЧЕНО КРАСНЫМ-->
 
+    <div class="filter-background-color"
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтры</h2>
-		<form class="filter" method="get" action="">
+		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 		 <fieldset>
 		 	<legend>Цвет</legend>
 		<ul class="color-pick-list">
@@ -78,7 +83,7 @@
 				 <label for="filter-black">Черный</label>
 			</li>
 			<li class="color-pick-option">
-				<input class="filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+				<input class="filter-input-checkbox" type="checkbox" name="white" id="filter-white" >
 				<label for="filter-white">Белый</label>
 			</li>
 			<li class="color-pick-option">
@@ -87,7 +92,7 @@
 		    </li> 
 			<li class="color-pick-option">
 				<input class="filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-			    <label for="filter-red">Красный<label>
+			    <label for="filter-red">Красный</label>
 		    </li>
 			<li class="color-pick-option">
 				<input class="filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
@@ -105,7 +110,7 @@
 	   	  	    </li>
 	   	  	 	<li class="bluetooth-pick-option">
 	   	  	 		<input type="radio" name="bluetooth-opt" id="bloothoth-">
-	   	  	 	<label for="bloototh-">Нет</label>
+	   	  	 	<label for="bloothoth-">Нет</label>
 	   	  	    </li>
 	   	  	 </ul>
 	   	  </fieldset>
@@ -113,6 +118,7 @@
 	   	  <button class="button" type="submit">ПОКАЗАТЬ</button>
 	    </form>
 	</section>
+    </div>
 
 	<section class="catalog">
 		<h2 class="visually-hidden">Список товаров</h2>
@@ -121,10 +127,10 @@
 			  <a href="catalog-item-1.html">
 				<h3>Любительская селфи-палка</h3>
 				<p>
-					<img src="img/item-1.png" width="360 px" height="380 px" alt="Любительская селфи-палка">
+					<img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
 				</p>
 			  </a>
-				 <p>
+				 <p class="catalog-item-price">
 					<b>500 руб.</b>
 					<a class="button" href="#">Купить</a>
 				 </p>
@@ -135,10 +141,10 @@
 			  <a href="catalog-item-2.html">
 				<h3>Профессианальная селфи-палка</h3>
 				<p>
-					<img src="img/item-2.png" width="360 px" height="380 px" alt="Профессиональная селфи-палка">
+					<img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
 				</p>
 			  </a>
-				 <p>
+				 <p class="catalog-item-price">
 					<b>1500 руб.</b>
 					<a class="button" href="#">Купить</a>
 				 </p>
@@ -148,10 +154,10 @@
 			  <a href="catalog-item-3.html">
 				<h3>Непотопляемая селфи-палка</h3>
 				<p>
-					<img src="img/item-3.png" width="360 px" height="380 px" alt="Непотопляемая селфи-палка">
+					<img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
 				</p>
 			  </a>
-				 <p>
+				 <p class="catalog-item-price">
 					<b>2500 руб.</b>
 					<a class="button" href="#">Купить</a>
 				</p>
@@ -161,15 +167,16 @@
 			  <a href="catalog-item-4.html">
 				<h3>Селфи-палка Следуй за мной</h3>
 			    <p>
-					<img src="img/item-4.jpg" width="360 px" height="380 px" alt="Селфи-палка «Следуй за мной»">
+					<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </p>
 			  </a>
-			    <p>
+			    <p class="catalog-item-price">
 					<b>4900 руб.</b>
 					<a class="button" href="#">Купить</a>
 				</p>
 			</li>
 		</ul>
+	 </section>
    </main>
 
  <footer class="main-footer">
