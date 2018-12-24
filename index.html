@@ -9,19 +9,35 @@
     <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
-   <header class="main-header">
-	<h1 class="device-header"><a class="main-header-logo" href="index.html">DEVICE</a></h1>
-	<nav class="main-navigation">
-		<form class="search">
-      <label for="search"><!--SVG форма поиска--></label>
-      <input type="text" name="searchbar" id="search" placeholder="Поиск по сайту">
-    </form>
+  <header class="main-header">
+    
+
+	<nav class="main-navigation flex"> 
+    <div class="top-flex-header">
+
+      <h1 class="device-header logo-header"><a class="main-header-logo" href="index.html">DEVICE</a></h1>
+      <div class="upper-header">
+		  <form class="search">
+        <label for="search"><!--SVG форма поиска--></label>
+        <input class="search-input" type="text" name="searchbar" id="search" placeholder="Поиск по сайту">
+      </form>
+    
+      <ul class="navigation-top">
+        <li><a class="login-link" href="login.html">Войти</a></li>
+        <li><a class="compare-header" href="comparison.html">Сравнить</a></li>
+        <li><a class="cart-header" href="busket.html">Корзина</a></li>
+      </ul>
+      </div>
+    </div>
+     
+    <div class="bottom-flex-header">
+
 		<ul class="navigation-catalog">
-			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
+			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
 		</ul>
-      
+  
     <!--Тут должен быть POPUP -->
-    <button class="button-catalog" type="button">POPUP-BUTTON</button>
+    
 
     <ul class="popup-header visually-hidden">
       <li class="popup-object">
@@ -43,59 +59,60 @@
         <a href="#">Квадрокоптеры</a>
       </li> 
     </ul>
-
-	  <ul class="navigation-top">
-	  	<li><a class="login-link" href="login.html">Войти</a></li>
-	  	<li><a href="comparison.html">Сравнить</a></li>
-	  	<li><a href="busket.html">Корзина</a></li>
-	  </ul>
+   
+   <!--                      -->
+    
+	  
 
 	  <ul class="navigation-bottom">
-	  	<li><a href="delivery.html">ДОСТАВКА</a></li>
-	  	<li><a href="terms-and-conditions.html">ГАРАНТИЯ</a></li>
-	  	<li><a href="contacts.html">КОНТАКТЫ</a></li>
+	  	<li class="delivery-header"><a href="delivery.html">ДОСТАВКА</a></li>
+	  	<li class="garantee-header"><a href="terms-and-conditions.html">ГАРАНТИЯ</a></li>
+	  	<li class="contacts-header"><a href="contacts.html">КОНТАКТЫ</a></li>
 	  </ul>
+  </div>
 	</nav>
+</div>
    </header>
 
    <main class="container">
 
 	<!-- ПОМЕЧЕНО КРАСНЫМ, ПОКА НЕ РАЗМЕЧАТЬ -->
 	
-
-  <section class="about">
-  	<h2>О нас</h2>
-  	<p> Огромный выбор гаджетов не оставит равнодушным гика,<br>
+  <div class="flex-about-contacts">
+   <section class="about flex-about">
+  	 <h2 class="about-header1">О нас</h2>
+  	<p class="about-p1"> Огромный выбор гаджетов не оставит равнодушным гика,<br>
   	 который есть в каждом из нас.</p>
-  	<p>Мы можем доставить ваш товар в самые отдаленные точки <br>
-  	 России! DEVICE работает со многими транспортными компаниями. </p>
+  	<p class="about-p3">Мы можем доставить ваш товар в самые отдаленные точки <br>
+  	 России! DEVICE работает со многими транспортными компаниями: </p>
 
   	 <h3 class="visually-hidden">Сервисы</h3>
   	   <ul class="services-list">
   	   	 <li>Деловые Линии</li>
-  	   	 <li>Авторейдинг</li>
+  	   	 <li>Автотрейдинг</li>
   	   	 <li>ЖелДорЭкспедиция</li>
   	   </ul>
-
+        
   	   	 <p>
-  	   	 	<a class="more-info" href="about.html">ПОДРОБНЕЕ О НАС</a>
+  	   	 	<a class="more-info device-btn" href="about.html">ПОДРОБНЕЕ О НАС</a>
   	   	 </p>
-  </section>
+   </section>
+  
+  <section class="contacts flex-contacts">
+    <h2 class="about-header2">Контакты</h2>
 
+    <p class="about-p2">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br> проверить работоспособность покупки. Всякое бывает.</p>
 
-  <section class="contacts">
-    <h2>Контакты</h2>
-
-    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br> проверить работоспособность покупки. Всякое бывает.</p>
-
-    <p>
+    <p class="contacts-image">
     	<img src="img/map.jpg" alt="улица Строителей, 15" width="560" height="222">
     </p>
 
     <p>
-    	<a class="feedback-link" href="feedback.html">НАПИШИТЕ НАМ</a>
+    	<a class="feedback-link device-btn" href="feedback.html">НАПИШИТЕ НАМ</a>
     </p>
    </section>
+   </div>
+
 
   <!--Форма "Напишите нам" --> 
   <section class="feedback visually-hidden">
@@ -131,34 +148,54 @@
 
    </main>
 
- <footer class="main-footer">
+ <footer class="main-footer flex-footer">
+  
+  <div class="footer-container">
 
+  <div class="flex-footer-left">
 	<span class="footer-device-logo"><a href="index.html">DEVICE</a></span>
 
 	<p>
-		<span class="footer-text-left"> г. Москва, ул. Строителей, 15</span> <br>
-		<span class="footer-text-right">Тел.: +7(495)495-95-95</span>
+		<span class="footer-text-left"> г. Москва, ул. Строителей, 15</span>
 	</p>
+  </div>
 
-    <ul class="footer-middle">
-    	<li><a href="delivery.html">ДОСТАВКА</a></li>
-    	<li><a href="terms-and-conditions.html">ГАРАНТИЯ</a></li>
-    	<li><a href="contacts.html">КОНТАКТЫ</a></li>
+  <div class="flex-footer-mid">
+    <ul class="footer-middle flex-mid-top">
+    	<li class="footer-delivery"><a href="delivery.html">ДОСТАВКА</a></li>
+    	<li class="footer-garantee"><a href="terms-and-conditions.html">ГАРАНТИЯ</a></li>
+    	<li class="footer-contacts"><a href="contacts.html">КОНТАКТЫ</a></li>
     </ul>
 
-    <ul class="footer-social">
-  	   	<li><a class="social-button" href="#">Facebook</a></li>
-  	   	<li><a class="social-button" href="#">Instagram</a></li>
-  	    <li><a class="social-button" href="#">Twitter</a></li>
+    <ul class="footer-social flex-mid-bottom">
+  	   	<li><a class="social-button fb-footer" href="#"><span class="visually-hidden">Facebook</span></a></li>
+  	   	<li><a class="social-button inst-footer" href="#"><span class="visually-hidden">Instagram</span></a></li>
+  	    <li><a class="social-button tw-footer" href="#"><span class="visually-hidden">Twitter</span></a></li>
+  	</ul>
+  </div>
+
+  <div class="flex-footer-right">
+  	<ul class="footer-left flex-right-top">
+      <li>
+        <a class="login-link-footer" href="login.html">
+      Войти
+        </a>
+      </li>
+      <li>
+        <a class="footer-compare" href="comparison.html">
+        Сравнить
+      </a>
+    </li>
+      <li><a class="footer-cart" href="busket.html">Корзина</a></li>
   	</ul>
 
-  	<ul class="footer-left">
-      <li><a class="login-link" href="login.html">Войти</a></li>
-      <li><a href="comparison.html">Сравнить</a></li>
-      <li><a href="busket.html">Корзина</a></li>
-  	</ul>
-
+    <p > 
+      <span class="footer-text-right">Тел.: +7 (495) 495-95-95</span>
+    </p>
   	<a class="footer-logo" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="htmlacademy.ru"></a>
+  </div>
+  
+  </div>
 
  </footer>
 </body>
