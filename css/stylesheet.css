@@ -1720,6 +1720,20 @@ display: none;
 
 	background-color: #f0c52e;
 	z-index: -1;
+	transition: all 0.2s ease-in-out;
+}
+
+.actions .actions-buy:hover::after {
+	transform: scaleY(5);
+
+
+}
+
+
+.actions .actions-buy:active {
+
+
+color: #be9c22;
 }
  /* Временно 
 	background-color: rgba(100, 100, 255, 0.2);
