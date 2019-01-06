@@ -471,7 +471,17 @@ input.search-input {
 
 .login-link{
 	position: relative;
-	margin-right: 175px;
+	/*padding-right: 175px;*/
+}
+
+.loginflex {
+	display: flex;
+}
+
+.loginflex  .login-enter {
+	padding-left: 18px;
+	color: #c4b376;
+
 }
 
 
@@ -702,7 +712,12 @@ align-items: flex-end;}
 }
 
 .flex-footer-mid {
-	margin-right: 35px;
+	margin-right: 30px;
+}
+
+.flex-footer-mid-main {
+	margin-right: 34px;
+
 }
 
 .footer-text-left {
@@ -861,7 +876,12 @@ align-items: flex-end;}
 
 .login-link-footer{
 	position: relative;
+	width: 150px;
 
+}
+
+.loginflex .login-enter2 {
+	color: #8d8d8d;
 }
 
 .footer-compare {
@@ -875,7 +895,12 @@ position: relative;
 
 
 
+.login-link-footer-main {
 
+	position: relative;
+	width: 50px;
+	margin-right: -7px;
+}
 
 
 .login-link-footer::before {
@@ -888,7 +913,7 @@ position: relative;
     height: 16px;
 
     top: 12px;
-    right: 54px;
+    left: -28px;
 
     opacity: 1;
 
@@ -897,6 +922,28 @@ position: relative;
     background-repeat: no-repeat;
 
 }
+
+
+.login-link-footer-main::before {
+	position: absolute;
+
+	content: "";
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    top: 12px;
+    left: -27px;
+
+    opacity: 1;
+
+	background-color: transparent;
+    background-image: url(../img/user-y.svg);
+    background-repeat: no-repeat;
+
+}
+
 
 .footer-compare::before  {
 position: absolute;
@@ -1252,10 +1299,25 @@ ul.navigation-bottom {
 }
 
 
+
 .container {
+	width: 100%;
+	
+}
+
+.main-wrap {
 	width: 1160px;
 	margin: 0 auto;
 }
+.flex-main-wrap {
+	display: flex;
+}
+
+.flex-main-wrap-top {
+	flex-direction: column;
+
+}
+
 
 .container .monopods {
 	margin: 0 60px;
@@ -1344,6 +1406,7 @@ ul.navigation-bottom {
 	margin: 0 auto;
 
 	background: #ebebeb;
+	    background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 10%,#ebebeb 50%,#ebebeb 100%);
  
   /*background: #dcdcdc;*/
 }
@@ -1354,7 +1417,6 @@ ul.navigation-bottom {
 	width: 50px;
 	height: 20px;
 	
-
 
 }
 
@@ -1516,6 +1578,8 @@ ul.navigation-bottom {
 	display: flex;
 
 background-color: #ffffff;
+
+    background: linear-gradient(to right,#efefef 0%,#efefef 29%,#fff 30%,#fff 100%);
 
 
 }
@@ -1731,10 +1795,669 @@ display: none;
 
 
 .actions .actions-buy:active {
-
-
 color: #be9c22;
 }
+
+
+
+
+
+/* КАТАЛОГ-  Пагинация */
+
+.catalog-item:nth-child(3),
+.catalog-item:nth-child(4) {
+	margin-bottom: 35px;
+}
+
+.catalog .pagination-list {
+
+	display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    width: 760px;
+    height: 70px;
+	list-style: none;
+	margin-left:72px;
+     
+     
+	background-color: #ebebeb;
+}
+/*.pagination-list .back {
+
+	padding: 25px 20px;
+	padding-left: 30px;
+	padding-top: 24px;
+	margin-right: 10px;
+    
+
+*/
+}
+.pagination-list .forward {
+	    width: 85px;
+    padding: 25px 20px;
+
+
+}
+.pagination-list a {
+	display: block;
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	font-weight: 800;
+	color: #000000;
+	vertical-align: middle;
+
+}
+
+.pagination-item-current {
+	margin-left: 220px;
+}
+
+.pagination-list .pagination-item-current {
+	color: #000000;
+}
+
+.pagination-item:nth-child(4) {
+	margin-right: auto;
+}
+
+.pag-numbr {
+	
+	margin-top: 25px;
+}
+.pg-2 {
+	margin-left: 27px;
+	margin-right: 28px;
+}
+
+.pagination-list .pag2, .pagination-list .pag3 {
+	color: #cacaca; 
+}
+
+.pag2:hover, .pag3:hover,
+.pag2:focus, .pag3:focus {
+	color: #8d8d8d; 
+}
+
+.pag2:active, .pag3:active {
+	color: #000; 
+}
+
+.back-a, .forward-a {
+	    padding: 25px 20px;
+    padding-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+}
+.pagination-list .forward-a {
+
+padding-right: 25px;
+letter-spacing: 0.24em;
+
+}
+
+
+.back-a:hover, .forward-a:hover,
+.back-a:focus, .forward-a:focus {
+ background-color: #d9d9d9;
+}
+.back-a:active, .forward-a:active {
+
+	color: #acacac ;
+	background-color: #d9d9d9;
+}
+
+
+
+
+/*МОДАЛЬНЫЕ ОКНА*/
+
+/*Окно для ФИДБЕКА */
+
+.modal-feedback {
+    display: none;
+
+
+	color:#000;
+	background-color: #fff;
+
+	width: 760px;
+	
+	padding: 92px 100px;  
+    padding-bottom: 84px;
+
+	position: fixed;
+
+
+
+    top: 155px;  /* Поправить позицию сверху, должно быть 1055px*/
+    left: 50%;
+    margin-left: -480px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.modal-feedback p {
+	margin: 0;
+	font-family: 'Gilroy', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	margin-bottom: 33px;
+}
+
+.modal-close {
+position: absolute;
+
+top: 21px;
+right: 22px;
+font-size: 0;
+border: 0;
+cursor: pointer;
+width: 55px;
+height: 55px;
+background-color: transparent;
+
+background-image: url('../img/modal-close.svg');
+background-repeat: no-repeat;
+opacity: 0.5;
+
+}
+
+.modal-close:hover, 
+.modal-close:focus{
+	opacity: 1;
+	outline: none;
+}
+
+.modal-close:active {
+	opacity: 0.35;
+	outline: none;
+}
+
+
+.feedback-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 360px;
+
+  padding: 15px 20px;
+  padding-bottom: 17px;
+  margin-top: 7px;
+
+  color: #bababa;
+  
+  
+  border: 0;
+  outline: none;
+}
+
+.feedback-form input[type="text"] {
+	margin-right: 40px;
+
+}
+
+.feedback-area {
+	width: 100%;
+	font-family: 'Gilroy', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 0.01em;
+	margin-bottom: 7px;
+}
+
+.feedback-area-bar {
+
+	border: 0;
+	font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 100%;
+  height: 156px;
+
+  padding: 15px 20px;
+  padding-bottom: 17px;
+  margin-bottom: 48px;
+  outline: none;
+}
+
+.button-send {
+    min-width: 200px;
+    position: relative;
+    display: inline-block;
+    font-family: "Gilroy", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+   /* padding: 9px 1px;
+    left: 3px;*/
+    border: 0;
+ 
+    z-index: 1;
+
+}
+
+
+.button-send::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 29%;
+    z-index: -1;
+    left: 0px;
+    top: 34%;
+    background-color: #f0c52e;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+.button-send:hover::before,
+.button-send:focus::before {
+	transform: scaleY(5);
+	outline: none;
+
+}
+
+.button-send:active{
+	color: #be9c22;
+	outline: none;
+  
+
+}
+
+
+
+
+.modal-map {
+    display: none;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	width:960px; 
+	height:559px;
+	margin-top: -280px;
+	margin-left: -480px;
+	background-color: transparent;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.modal-map p {
+	margin: 0;
+}
+
+
+
+/*ФОРМА В КАТАЛОГЕ (СЛЕВА) */
+
+.filters .filter {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-item {
+	position: relative;
+	margin:0;
+	padding: 0;
+
+	border: none;
+
+	width: 200px;
+
+
+}
+
+.filter-item::before,
+.filter-item::after {
+	content: "";
+	position: absolute;
+
+	top: 69px;
+	left: 0px;
+
+	height: 2px;
+	width: 100%;
+	background-color: #000000;
+}
+
+.filter-item::after{
+	top: 209px;
+
+}
+
+.filters .filter-item {
+	margin-bottom: 40px;
+
+}
+
+.filter-item legend {
+	padding-top:81px;
+
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+
+	letter-spacing: 0.01em;
+
+
+}
+
+.range-filter{
+	width: 200px;
+	margin-top:20px;
+	margin-bottom: ; /* ADD MARGIN*/ 
+}
+
+.range-controls {
+	position: relative;
+	height: 15px;
+	padding-top: 15px;
+
+}
+
+.range-controls .scale {
+	height: 2px;
+	background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+	height: 2px;
+	background-color: #91c92f;
+	width: 60%
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 5px;
+  left: -6px;
+
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+}
+
+.range-controls .toggle-max {
+  left: 107px;
+}
+.price-controls {
+  font-size: 0;
+  margin-left: -1px;
+  margin-top: -3px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 45%;
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.price-controls input {
+
+  width: 40px;
+ /* padding: 8px 10px;*/
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  margin-left: -3px;
+
+/*  text-align: center;*/
+  color: #cfcfcf;
+  border: none;
+  background-color: transparent;
+}
+
+
+/*COLOR_FILTER*/
+.filter .color-item {
+	position: relative;
+	width: 200px;
+	margin-bottom: 44px;
+}
+
+.color-item::after {
+	position: absolute;
+	content: "";
+	bottom: -34px;
+	left: 0px;
+
+	height: 2px;
+	width: 100%;
+	background-color: #000000;
+}
+
+
+
+.color-item legend {
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+
+	letter-spacing: 0.01em;
+	margin-bottom: 17px;
+
+}
+
+/*.color-pick-option {
+	display: block;
+	font-size: 0;
+}*/
+.color-item label {
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 0.01em;
+    
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.color-pick-option{
+  
+  padding-left: 38px;
+}
+
+.color-pick-option input[type="checkbox"] + label::before {
+	position: absolute;
+	content: "";
+
+
+    width: 27px;
+    height: 23px;
+
+	top: -2px;
+	left: -40px;
+
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*background-position: 50% 50%;*/
+
+}
+
+.color-pick-option input[type="checkbox"]:checked + label::before {
+	
+
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	/*background-position: 50% 50%;*/
+
+}
+
+.color-pick-option input[type="checkbox"]:disabled + label::before,
+.color-pick-option input[type="checkbox"]:disabled + label {
+	opacity: 0.25;
+}
+
+.color-pick-option label:hover::before,
+.color-pick-option label:focus::before {
+	opacity: 0.6;
+}
+
+.color-pick-option label:active::before {
+	opacity:1;
+}
+
+/*BLUETOOTH-FILTER*/
+
+.filters .bluetooth-item {
+	position: relative;
+	width: 200px;
+	margin-bottom: 39px;
+
+}
+
+.bluetooth-item legend {
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+
+	letter-spacing: 0.01em;
+	margin-bottom: 17px;
+
+}
+
+.bluetooth-item label {
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 0.01em;
+    
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.bluetooth-pick-option{
+  
+  padding-left: 38px;
+}
+
+.bluetooth-pick-option input[type="radio"] + label::before {
+	position: absolute;
+	content: "";
+
+
+    width: 25px;
+    height: 25px;
+
+	top: -4px;
+	left: -40px;
+
+	background-image: url("../img/radio-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.bluetooth-pick-option input[type="radio"]:checked + label::before {
+	
+
+	background-image: url("../img/radio-on.svg");
+	background-repeat: no-repeat;
+	/*background-position: 50% 50%;*/
+
+}
+.bluetooth-pick-option input[type="checkbox"]:disabled + label::before,
+.bluetooth-pick-option input[type="checkbox"]:disabled + label {
+	opacity: 0.25;
+}
+
+.bluetooth-pick-option label:hover::before,
+.bluetooth-pick-option label:focus::before {
+	opacity: 0.6;
+}
+
+.bluetooth-pick-option label:active::before {
+	opacity:1;
+}
+
+.button-show {
+	background-color: transparent;
+	width: 200px;
+	cursor: pointer;
+	user-select: none;
+}
+
+
+
+
+
+
+
+/*.device-btn::before {
+
+	content: "";
+	position: absolute;
+	
+
+	width: 100%;
+	height: 20%;
+	z-index: -1;
+
+	left: -2px;
+	top:40%;
+	background-color: #f0c52e;
+
+	
+
+	transition: all 0.2s ease-in-out;
+}
+
+.device-btn:hover::before{
+	transform: scaleY(5);
+
+}
+ 
+
+.device-btn:active {
+	color: #be9c22;
+}
+
+*/
+
+
  /* Временно 
 	background-color: rgba(100, 100, 255, 0.2);
 }

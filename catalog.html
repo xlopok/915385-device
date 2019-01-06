@@ -23,7 +23,7 @@
       </form>
     
       <ul class="navigation-top">
-        <li><a class="login-link" href="login.html">Войти</a></li>
+        <li class="loginflex"><a class="login-link" href="#">Валентин Петухов</a><a  class="login-enter" href="login.html">Выйти</a></li>
         <li><a class="compare-header" href="comparison.html">Сравнить</a></li>
         <li><a class="cart-header" href="busket.html">Корзина</a></li>
       </ul>
@@ -73,17 +73,20 @@
 	</nav>
 
    </header>
-
+   
   <main class="container">
+     <div class="main-wrap flex-main-wrap-top">
 	<h2 class="monopods">Моноподы для селфи</h2>
 	<ul class="breadcrumbs">
 		<li><a href="index.html">Главная</a></li>
 		<li><a href="catalog.html">Каталог товаров</a></li>
 		<li class="breadcrumbs-current">Моноподы для селфи</li>
 	</ul>
+</div>
 
 
 	<section class="titles-cat">
+		<div class="main-wrap flex-main-wrap">
 		<div class="filter-wrap">
 			<h2 class="filter">ФИЛЬТР:</h2>
 		</div>
@@ -102,7 +105,7 @@
          		<a class="triangle2" href="#"></a>
          	</div>
 
-
+        </div>
 		</div>	
 	</section>
 
@@ -113,52 +116,87 @@
 
 
      <div class="main-wrapper">
+
+     	<div class="main-wrap flex-main-wrap">
     
     <div class="filter-background-color">
 	<section class="filters">
 		<h2 class="visually-hidden">Фильтры</h2>
 		<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-		 <fieldset>
+          
+          <!-- SLIDER -->
+          
+
+          <fieldset class="filter-item">
+          	<legend>Стоимость</legend>
+          	<div class="range-filter">
+          		<div class="range-controls">
+          			<div class="scale">
+          				<div class="bar">
+          					
+          				</div>
+          				
+          			</div>
+          			<div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+          		</div>
+          		<div class="price-controls">
+          			<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            		<label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+          		</div>
+          		
+          	</div>
+
+          </fieldset>
+
+
+
+
+
+			<!-- COLOR -->
+		 <fieldset class="color-item">
 		 	<legend>Цвет</legend>
-		<ul class="color-pick-list">
-			<li class="color-pick-option">
-				<input class="filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-				 <label for="filter-black">Черный</label>
-			</li>
-			<li class="color-pick-option">
-				<input class="filter-input-checkbox" type="checkbox" name="white" id="filter-white" >
-				<label for="filter-white">Белый</label>
-			</li>
-			<li class="color-pick-option">
-				<input class="filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-			    <label for="filter-blue">Синий</label>
-		    </li> 
-			<li class="color-pick-option">
-				<input class="filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-			    <label for="filter-red">Красный</label>
-		    </li>
-			<li class="color-pick-option">
-				<input class="filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
-				<label for="filter-pink">Розлвый</label>
-			</li>
-	   	</ul>
+			<ul class="color-pick-list">
+				<li class="color-pick-option">
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+				 	<label for="filter-black">Черный</label>
+				</li>
+				<li class="color-pick-option">
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="filter-white" >
+					<label for="filter-white">Белый</label>
+				</li>
+				<li class="color-pick-option">
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+			    	<label for="filter-blue">Синий</label>
+		    	</li> 
+				<li class="color-pick-option">
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
+			    	<label for="filter-red">Красный</label>
+		    	</li>
+				<li class="color-pick-option">
+					<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+					<label for="filter-pink">Розовый</label>
+				</li>
+	   		</ul>
 	   	  </fieldset>
 
-	   	  <fieldset>
+	   	  <!-- BLUETOOTH -->
+
+	   	  <fieldset class="bluetooth-item">
 	   	  	<legend>Bluetooth</legend>
 	   	  	 <ul class="bluetooth-pick-list">
 	   	  	 	<li class="bluetooth-pick-option">
-	   	  	 		<input type="radio" name="bluetooth-opt" id="bluetooth+" checked>
-	   	  	 	<label for="bluetooth+">Есть</label>
+	   	  	 		<input class="visually-hidden" type="radio" name="bluetooth-opt" id="bluetooth+" value="on" checked>
+	   	  	 		<label for="bluetooth+">Есть</label>
 	   	  	    </li>
 	   	  	 	<li class="bluetooth-pick-option">
-	   	  	 		<input type="radio" name="bluetooth-opt" id="bloothoth-">
-	   	  	 	<label for="bloothoth-">Нет</label>
+	   	  	 		<input class="visually-hidden" type="radio" name="bluetooth-opt" id="bloothoth-" value="off">
+	   	  	 		<label for="bloothoth-">Нет</label>
 	   	  	    </li>
 	   	  	 </ul>
 	   	  </fieldset>
 
-	   	  <button class="button" type="submit">ПОКАЗАТЬ</button>
+	   	  <button class="button-show button-send" type="submit">ПОКАЗАТЬ</button>
 	    </form>
 	</section>
     </div>
@@ -209,12 +247,12 @@
 			</li>
 
 			<li class="catalog-item">
-			  <a href="catalog-item-3.html">
+			  
 				
 				<p class="image-cat">
 					<img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
 				</p>
-			  </a>
+			  
 				<div class="flex-wrap-name">
 				<a href="catalog-item-3.html">
 					<h3>Непотопляемая селфи-палка</h3>
@@ -225,18 +263,18 @@
 				</p>
 			    </div>
 				<div class="actions">
-                    <a href="#" class="button buy">В КОРЗИНУ</a>
-                    <a href="#" class="bookmark">Добавить к сравнению</a>
+                    <a href="#" class="actions-buy buy">В КОРЗИНУ</a>
+                    <a href="#" class="actions-compare bookmark">Добавить к сравнению</a>
                 </div>
 			</li>
 
 			<li class="catalog-item">
-			  <a href="catalog-item-4.html">
+			  
 				
 			    <p class="image-cat new-item">
 					<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </p>
-			  </a>
+			  
 			  <div class="flex-wrap-name">
 			  <a href="catalog-item-4.html">
 			  	<h3>Селфи-палка  «Следуй за мной»</h3>
@@ -246,18 +284,28 @@
 				</p>
 			  </div>
 				<div class="actions">
-                    <a href="#" class="button buy">В КОРЗИНУ</a>
-                    <a href="#" class="bookmark">Добавить к сравнению</a>
+                    <a href="#" class="actions-buy buy">В КОРЗИНУ</a>
+                    <a href="#" class="actions-compare bookmark">Добавить к сравнению</a>
                 </div>
 			</li>
 		</ul>
 	</div>
+
+	<ul class="pagination-list">
+		   <li class="pagination-item back"><a class="back-a" href="#">НАЗАД</a></li>
+          <li class="pagination-item pag-numbr pagination-item-current""><a class="pag1" >1</a></li>
+          <li class="pagination-item pag-numbr pg-2"><a class="pag2" href="#">2</a></li>
+          <li class="pagination-item pag-numbr "><a class="pag3" href="#">3</a></li>
+          <li class="pagination-item forward"><a class="forward-a" href="#">ВПЕРЕД</a></li>
+        </ul>
 	 </section>
 
 
 
 
 	</div>
+    </div>
+
    </main>
 
  <footer class="main-footer flex-footer">
@@ -288,11 +336,9 @@
 
   <div class="flex-footer-right">
   	<ul class="footer-left flex-right-top">
-      <li>
-        <a class="login-link-footer" href="login.html">
-      Войти
-        </a>
-      </li>
+      <li class="loginflex"><a class="login-link-footer" href="login.html">Валентин Петухов</a><a class="login-enter2" href="login.html">Выйти</a></</li>
+      <!-- <li class="loginflex"><a class="login-link" href="#">Валентин Петухов</a><a  class="login-enter" href="login.html">Выйти</a></li> -->
+
       <li>
         <a class="footer-compare" href="comparison.html">
         Сравнить
