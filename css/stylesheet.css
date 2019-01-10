@@ -3112,6 +3112,19 @@ top: 0px;
 }
 
 /*Input Settings*/
+.search input[type="search"] {
+b
+ outline: none;
+     width: 315px;
+   /*  min-height: 49px;*/
+     border:none;
+  }
+
+.search input[type="search"]:focus {
+	border-bottom: 2px solid #000;
+	outline:none;
+
+}
 
 
 .search .search-input::placeholder {
@@ -3127,10 +3140,89 @@ top: 0px;
 	color: #998c5b;
 }
 
+
+.search input[type="submit"] {
+	padding: 0;
+	    display: none;
+	  position: absolute;
+	  top: -15px;
+	  left: 310px;
+    width: 85px;
+    min-height: 49px;
+    margin-left: -4px;
+    background-color: #f7e296;
+    border: 2px solid #000;
+    outline: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+.search input[type="submit"]:hover,
+.search input[type="submit"]:focus {
+	color: #fff;
+	background-color: #000;
+}
+
+
+.search input[type="submit"]:active {
+	color: #747474;
+}
+
+.search input[type="search"]:focus ~ input[type="submit"],
+.search input[type="search"]:focus ~ input[type="submit"]:focus {
+	display: block;
+}
+
+.search input[type="submit"]:hover ~ input[type="search"]
+
+.search input[type="submit"]:active {
+	color: #747474;
+}
+
+
+/*.modal-map iframe {
+  position: relative;
+  z-index: 3;
+
+  border: none;
+}
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.modal-map button {
+	z-index: 2;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contacts-image img {
 	cursor: pointer;
 
 }
+
+
 
 
 @keyframes bounce {
