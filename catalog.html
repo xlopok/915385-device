@@ -19,7 +19,7 @@
       <div class="upper-header">
 		  <form class="search">
         <label for="search"><!--SVG форма поиска--></label>
-        <input class="search-input" type="text" name="searchbar" id="search" placeholder="Поиск по сайту">
+        <input class="search-input" type="search" name="searchbar" id="search" placeholder="Поиск по сайту">
       </form>
     
       <ul class="navigation-top">
@@ -32,32 +32,34 @@
      
     <div class="bottom-flex-header catalog-bottom">
 
-		<ul class="navigation-catalog">
-			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
-		</ul>
+	<ul class="navigation-catalog">
+		<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+		
   
     <!--Тут должен быть POPUP -->
     
-
-    <ul class="popup-header visually-hidden">
-      <li class="popup-object">
-        <a href="#">Вирутальная реальность</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Моноподы для селфи</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Экшн-камеры</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Фитнес-браслеты</a>
-        </li>
-      <li class="popup-object">
-        <a href="#">Умные часы</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Квадрокоптеры</a>
-      </li> 
+    
+	        <ul class="popup-header-hidden popup-header-hidden-cat">
+	          <li class="popup-object">
+	            <a href="#">Виртуальная реальность</a>
+	          </li>
+	          <li class="popup-object">
+	            <a href="catalog.html">Моноподы для селфи</a>
+	          </li>
+	          <li class="popup-object">
+	            <a href="#">Экшн-камеры</a>
+	          </li>
+	          <li class="popup-object">
+	            <a href="#">Фитнес-браслеты</a>
+	          </li>
+	          <li class="popup-object smart-watch">
+	            <a href="#">Умные часы</a>
+	          </li>
+	          <li class="popup-object">
+	            <a href="#">Квадрокоптеры</a>
+	          </li> 
+	        </ul>
+	      </li>
     </ul>
    
    <!--                      -->
@@ -76,36 +78,36 @@
    
   <main class="container">
      <div class="main-wrap flex-main-wrap-top">
-	<h2 class="monopods">Моноподы для селфи</h2>
-	<ul class="breadcrumbs">
-		<li><a href="index.html">Главная</a></li>
-		<li><a href="catalog.html">Каталог товаров</a></li>
-		<li class="breadcrumbs-current">Моноподы для селфи</li>
-	</ul>
-</div>
+		<h2 class="monopods">Моноподы для селфи</h2>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог товаров</a></li>
+			<li class="breadcrumbs-current">Моноподы для селфи</li>
+		</ul>
+	</div>
 
 
 	<section class="titles-cat">
 		<div class="main-wrap flex-main-wrap">
-		<div class="filter-wrap">
-			<h2 class="filter">ФИЛЬТР:</h2>
-		</div>
+			<div class="filter-wrap">
+				<h2 class="filter">ФИЛЬТР:</h2>
+			</div>
 
-		<div class="sorting-wrap">
-         	<h2 class="sorting-h">СОРТИРОВКА:</h2>
+			<div class="sorting-wrap">
+	         	<h2 class="sorting-h">СОРТИРОВКА:</h2>
 
-         	<ul class="sorting-options">
-         		<li><a class="sorting-price" href="#">По цене</a></li>
-         		<li><a class="sorting-type" href="#">По типу</a></li>
-         		<li><a class="sorting-popularity" href="#">По популярности</a></li>
-         	</ul>
+	         	<ul class="sorting-options">
+	         		<li><a class="sorting-price" href="#">По цене</a></li>
+	         		<li><a class="sorting-type" href="#">По типу</a></li>
+	         		<li><a class="sorting-popularity" href="#">По популярности</a></li>
+	         	</ul>
 
-         	<div class="triangles">
-         		<a class="triangle1" href="#"></a>
-         		<a class="triangle2" href="#"></a>
-         	</div>
+	         	<div class="triangles">
+	         		<a class="triangle1" href="#"></a>
+	         		<a class="triangle2" href="#"></a>
+	         	</div>
 
-        </div>
+	        </div>
 		</div>	
 	</section>
 
@@ -328,9 +330,9 @@
     </ul>
 
     <ul class="footer-social flex-mid-bottom">
-  	   	<li><a class="social-button fb-footer" href="#"><span class="visually-hidden">Facebook</span></a></li>
-  	   	<li><a class="social-button inst-footer" href="#"><span class="visually-hidden">Instagram</span></a></li>
-  	    <li><a class="social-button tw-footer" href="#"><span class="visually-hidden">Twitter</span></a></li>
+  	   	<li><a class="social-button fb-footer" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+  	   	<li><a class="social-button inst-footer" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a></li>
+  	    <li><a class="social-button tw-footer" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
   	</ul>
   </div>
 
@@ -350,7 +352,7 @@
     <p > 
       <span class="footer-text-right">Тел.: +7 (495) 495-95-95</span>
     </p>
-  	<a class="footer-logo" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="htmlacademy.ru"></a>
+  	<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="htmlacademy.ru"></a>
   </div>
   
   </div>

@@ -9,6 +9,10 @@
     <link href="css/stylesheet.css" rel="stylesheet">
   </head>
   <body>
+    
+    
+
+
   <header class="main-header">
     
 
@@ -19,7 +23,8 @@
       <div class="upper-header">
 		  <form class="search">
         <label for="search"><!--SVG форма поиска--></label>
-        <input class="search-input" type="text" name="searchbar" id="search" placeholder="Поиск по сайту">
+        <input class="search-input" type="search" name="searchbar" id="search" placeholder="Поиск по сайту">
+        <input type="submit" name="submit" value="Найти">
       </form>
     
       <ul class="navigation-top">
@@ -34,31 +39,36 @@
 
 		<ul class="navigation-catalog">
 			<li><a class="triger-popup" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
-		</ul>
+		
   
     <!--Тут должен быть POPUP -->
     
-
-    <ul class="popup-header visually-hidden">
-      <li class="popup-object">
-        <a href="#">Вирутальная реальность</a>
+    
+        <ul class="popup-header-hidden">
+          <li class="popup-object">
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li class="popup-object">
+            <a href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li class="popup-object">
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li class="popup-object">
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="popup-object smart-watch">
+            <a href="#">Умные часы</a>
+          </li>
+          <li class="popup-object">
+            <a href="#">Квадрокоптеры</a>
+          </li> 
+        </ul>
       </li>
-      <li class="popup-object">
-        <a href="#">Моноподы для селфи</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Экшн-камеры</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Фитнес-браслеты</a>
-        </li>
-      <li class="popup-object">
-        <a href="#">Умные часы</a>
-      </li>
-      <li class="popup-object">
-        <a href="#">Квадрокоптеры</a>
-      </li> 
     </ul>
+   
+
+    
    
    <!--                      -->
     
@@ -76,7 +86,187 @@
 
    <main class="container">
 
-	<!-- ПОМЕЧЕНО КРАСНЫМ, ПОКА НЕ РАЗМЕЧАТЬ -->
+
+    <!-- SLIDER-INDEX -->
+
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle" >
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle" >
+
+    <section class="main-slider">
+      
+      <div class="big-slider-wrap">
+
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+
+
+              <!-- First-slide -->
+
+        <div class="slider-container slider-first" id="slide1">
+          <img class="slider-image1" src="img/slider-1.png" width="384px" height="486px" alt="Палка для селфи">
+          <div class="slider-wrap">
+            <h2 class="visually-hidden">Палка  для селфи</h2>
+            <ul class="slider-list">
+
+              <li class="slider-item">
+                <h3>Делай селфи,<br> как Бен Стиллер!</h3>
+                <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="device-btn slider-button" href="catalog.html">Подробнее</a>
+              
+                <ul class="slider-item-t-info">
+                    <li><span>8,5 м</span><p>Длина палки</p></li>
+                    <li><span>5 кг</span><p>Вес палки</p></li>
+                    <li><span>Карбон</span><p>Материал</p></li>
+                </ul>
+   
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+        <!-- SECOND_SLIDE -->
+
+        <div class="slider-container slider-second" id="slide2">
+          <img class="slider-image2" src="img/slider-2.png" width="345px" height="485px" alt="Фитнес-браслет">
+          <div class="slider-wrap">
+            <h2 class="visually-hidden">Фитнес браслеты</h2>
+            <ul class="slider-list">
+
+            
+              <li class="slider-item slider-item2">
+                <h3>Худеем<br>правильно!</h3>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.</p>
+                <a class="device-btn slider-button" href="#">Подробнее</a>
+              
+                <ul class="slider-item-t-info">
+                    <li><span>48 часов</span><p>Без подзарядки</p></li>
+                    
+                </ul>
+   
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- THIRD_SLIDE -->
+
+        <div class="slider-container slider-third" id="slide3">
+          <img class="slider-image3" src="img/slider-3.png" width="526px" height="334px" alt="Квадрокоптер">
+          <div class="slider-wrap">
+            <h2 class="visually-hidden">Квадрокоптер</h2>
+            <ul class="slider-list">
+
+   
+              <li class="slider-item slider-item3">
+                <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="device-btn slider-button" href="#">Подробнее</a>
+              
+                <ul class="slider-item-t-info">
+                    <li><span>800 м</span><p>Дальность полета</p></li>
+                    <li><span class="slider3-padding">50 м</span><p>Радиус поражения</p></li>
+                </ul>
+   
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+      
+    </section>
+
+
+	<!-- ЛИНЕЙКА ТОВАРОВ-->
+
+    <section class="selling-positions selling-positions-flex">
+      <a href="#"><div class="s-position-container"><img class="img-position-1" src="img/popular-1.svg" width="97px" height="55px" alt="Виртуальная реальность"></div><span>Виртуальная реальность</span></a>
+      <a href="catalog.html"><div class="s-position-container"><img class="img-position-2"src="img/popular-2.svg" width="86px" height="117px" alt="Моноподы для селфи"></div><span class="short-span">Моноподы для селфи</span></a>
+      <a href="#"><div class="s-position-container"><img class="img-position-3" src="img/popular-3.svg" width="71px" height="87px" alt="Экшн-камеры"></div><span>Экшн-камеры</span></a>
+      <a href="#"><div class="s-position-container"><img class="img-position-4" src="img/popular-4.svg" width="107px" height="65px" alt="Фитнес браслеты"></div><span>Фитнес-браслеты</span></a>
+      <a href="#"><div class="s-position-container"><img class="img-position-5" src="img/popular-5.svg" width="56px" height="98px" alt="Умные часы"></div><span>Умные часы</span></a>
+      <a href="#"><div class="s-position-container"><img class="img-position-6" src="img/popular-6.svg" width="132px" height="69px" alt="Квадрокоптеры"></div><span>Квадрокоптеры</span></a>
+     
+      
+    </section>
+
+
+
+    <!-- УСЛУГИ МАГАЗИНА -->
+
+    
+
+    <section class="slider-services">
+
+    <input class="visually-hidden" type="radio" name="service-input-button" id="slider-service1" checked>
+    <input class="visually-hidden" type="radio" name="service-input-button" id="slider-service2" >
+    <input class="visually-hidden" type="radio" name="service-input-button" id="slider-service3" >
+
+      <div class="slider-services-container">
+        <h2 class="visually-hidden">Услуги: доставка, гарантия, кредит</h2>
+        <ul class="left-slider-container">
+          <li><label class="" for="slider-service1">Доставка</label></li>
+          <li><label class="" for="slider-service2">Гарантия</label></li>
+          <li><label class="" for="slider-service3">Кредит</label></li>
+        </ul>
+
+        <ul class="right-slider-container">
+          <li class="sevice-item sevice-item1">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="sevice-item sevice-item2">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          </li>
+          <li class="sevice-item sevice-item3">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
+
+        
+      </div>
+      
+    </section>
+
+
+
+  <!-- Партнеры магазина -->
+
+    <section class="partners partners-flex">
+      <a href="#">
+        <img src="img/logo-1-blant.png" width="260px" height="100px" alt="dji-partner-blant">
+        <img src="img/logo-1.png" width="260px" height="100px" alt="dji-partner">
+      </a>
+      <a href="#">
+        <img src="img/logo-2-blant.png" width="260px" height="100px" alt="sp-gadgets-partner-blant">
+        <img src="img/logo-2.png" width="260px" height="100px" alt="sp-gadgets-partner">
+      </a>
+      <a href="#">
+        <img src="img/logo-3-blant.png" width="260px" height="100px" alt="gopro-partner-blant">
+        <img src="img/logo-3.png" width="260px" height="100px" alt="gopro-partner">
+      </a>
+      <a href="#">
+        <img src="img/logo-4-blant.png" width="260px" height="100px" alt="vive-partner-blant">
+        <img src="img/logo-4.png" width="260px" height="100px" alt="vive-partner">
+
+      </a>
+      
+    </section>
+
 	
   <div class="flex-about-contacts">
    <section class="about flex-about">
@@ -115,20 +305,20 @@
 
 
   <!--Форма "Напишите нам" --> 
-  <section class="modal-feedback ">
+  <section class="modal-feedback">
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="feedback-name-bar">
        <label for="feedback-name">Ваше имя:</label><br>
-      <input type="text" name="name" value="" id="feedback-name" placeholder="Имя Фамилия" required>
+      <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
       </p>
 
       <p class="feedback-email-bar">
         <label for="feedback-email">Ваш e-mail:</label><br>
-        <input type="email" name="email" value="" id="feedback-email" placeholder="email@example.com" required>
+        <input type="email" name="email" id="feedback-email" placeholder="email@example.com" >
       </p>
 
        <label class="feedback-area" for="textarea-form">Текст письма:</label><br>
-      <textarea class="feedback-area-bar" placeholder="В свободной форме" name="text-area" id="textarea-form"  required></textarea><br>
+      <textarea class="feedback-area-bar" placeholder="В свободной форме" name="text-area" id="textarea-form" ></textarea><br>
 
       <button class="button-send" type="submit">ОТПРАВИТЬ</button>
       <button class="modal-close button-close" type="button">Закрыть</button>
@@ -169,9 +359,9 @@
     </ul>
 
     <ul class="footer-social flex-mid-bottom">
-  	   	<li><a class="social-button fb-footer" href="#"><span class="visually-hidden">Facebook</span></a></li>
-  	   	<li><a class="social-button inst-footer" href="#"><span class="visually-hidden">Instagram</span></a></li>
-  	    <li><a class="social-button tw-footer" href="#"><span class="visually-hidden">Twitter</span></a></li>
+  	   	<li><a class="social-button fb-footer" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+  	   	<li><a class="social-button inst-footer" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a></li>
+  	    <li><a class="social-button tw-footer" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
   	</ul>
   </div>
 
@@ -193,11 +383,121 @@
     <p > 
       <span class="footer-text-right">Тел.: +7 (495) 495-95-95</span>
     </p>
-  	<a class="footer-logo" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="htmlacademy.ru"></a>
+  	<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="htmlacademy.ru"></a>
   </div>
   
   </div>
 
  </footer>
+
+
+<script type="text/javascript">
+
+
+
+  var linkFeedback = document.querySelector(".feedback-link");
+  var popupFeedback = document.querySelector(".modal-feedback");
+  var closeFeedback =popupFeedback.querySelector(".modal-feedback .button-close");
+  var formFeedback = popupFeedback.querySelector("form");
+
+  var loginFeedback = popupFeedback.querySelector("[name=name]");
+  var emailFeedback = popupFeedback.querySelector("[name=email");
+  var textareaFeedback = popupFeedback.querySelector("[name=text-area]");
+
+  var isStorageSupport = true;
+
+  var storage = "";
+
+
+  try {
+    storage = localStorage.getItem("loginFeedback");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  linkFeedback.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupFeedback.classList.add("modal-feedback-open");
+    
+
+    if (storage) {
+      loginFeedback.value = storage;
+      emailFeedback.focus();
+    } else {
+      loginFeedback.focus();
+
+    }
+  });
+
+  closeFeedback.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupFeedback.classList.remove("modal-feedback-open");
+    popupFeedback.classList.remove("modal-error");
+  });
+
+  formFeedback.addEventListener("submit", function (evt) {
+    if (!loginFeedback.value || !emailFeedback.value || !textareaFeedback.value) {
+      evt.preventDefault();
+      popupFeedback.classList.remove("modal-error");
+      popupFeedback.offsetWidth = popupFeedback.offsetWidth;
+      popupFeedback.classList.add("modal-error");
+    } else {
+      if (isStorageSupport) {
+      localStorage.setItem("loginFeedback", loginFeedback.value); 
+  }
+    }
+  });
+
+
+  var linkMap = document.querySelector(".contacts-image img");
+  var popupMap = document.querySelector(".modal-map");
+  var closeMap = document.querySelector(".modal-map .button-close");
+
+  linkMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupMap.classList.add("modal-map-open")
+  });
+
+  closeMap.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popupMap.classList.remove("modal-map-open")
+  });
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      if (popupFeedback.classList.contains("modal-feedback-open")) {
+        evt.preventDefault();
+        popupFeedback.classList.remove("modal-feedback-open");
+        popupFeedback.classList.remove("modal-error");
+      }
+    }
+  });
+
+
+   window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      if (popupMap.classList.contains("modal-map-open")) {
+        evt.preventDefault();
+        
+        popupMap.classList.remove("modal-map-open");
+      }
+    }
+  });
+
+
+
+
+
+
+
+
+  
+
+
+
+
+</script>
+
+
 </body>
 </html>
