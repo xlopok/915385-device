@@ -1,4 +1,33 @@
 
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
+	url("../fonts/web/gilroyextrabold.woff") format("woff"),
+	url("../fonts/gilroy/Gilroyextrabold.ttf") format("ttf");
+	font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+	font-family:"Gilroy";
+	src: url("../fonts/web/gilroylight.woff2") format("woff2");
+ 	font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/web/opensans.woff2") format("woff2");
+	font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/web/opensanslight.woff2") format("woff2");
+	font-style: normal;
+    font-weight: 300;
+}
+
 
 body {
 	margin:0;
@@ -25,7 +54,7 @@ a {
 }
 
 .navigation-top {
-	font-family: "Open Sans";
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
@@ -96,7 +125,7 @@ a {
 
 .about p,
 .contacts p {
-	font-family: "Open Sans";
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
@@ -112,7 +141,7 @@ a {
 
 .more-info,
 .feedback-link {
-	font-family: "Gilroy";
+	font-family: "Gilroy", Arial, sans-serif;
 	text-align: center;
 	vertical-align: middle;
 	font-size: 18px;
@@ -124,7 +153,7 @@ a {
 }
 
 .button {
-	font-family: "Gilroy";
+	font-family: "Gilroy", Arial, sans-serif;
 	text-align: center;
 	vertical-align: middle;
 	font-size: 18px;
@@ -159,7 +188,7 @@ a {
 
 .footer-device-logo a {
 	color: #ffc600;
-	font-family: "Gilroy";
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 48px;
 	font-weight: 800;
 }
@@ -187,7 +216,7 @@ a {
 
 .footer-text-right,
 .footer-text-left {
-font-family: "Open Sans";
+font-family: "Open Sans", Arial, sans-serif;
 font-size: 15px;
 line-height: 30px;
 font-weight: 300;
@@ -196,7 +225,7 @@ font-weight: 300;
 .footer-left a{
 	font-size: 15px;
 	line-height: 36px;
-	font-family: "Open Sans";
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	
 }
@@ -256,7 +285,7 @@ font-weight: 300;
 }
 
 .breadcrumbs li{
-	font-family: "Open Sans";
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
@@ -449,7 +478,7 @@ justify-content: space-between;
   width: 500px;
  
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 30px;
   font-size: 15px;
   font-weight: 400;
@@ -471,7 +500,7 @@ input.search-input {
 	padding-left: 38px;
 
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 30px;
   font-size: 15px;
   font-weight: 400;
@@ -687,7 +716,7 @@ align-items: flex-end;}
 .footer-text-right {
     display: block;
 
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
@@ -864,7 +893,7 @@ align-items: flex-end;}
 .flex-footer-right a {
 	display: block;
 
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 36px;
 	font-weight: 300;
@@ -1056,9 +1085,7 @@ font-family: "Open Sans", Arial, sans-serif;
 }
 
 .flex-about-contacts .about-p1 {
-
-
-
+ width: 425px;
  margin-bottom: 30px;
 
 }
@@ -1079,7 +1106,7 @@ font-family: "Open Sans", Arial, sans-serif;
 }
 
 .flex-about-contacts .about-p3 {
-
+	width: 485px;
 	margin-bottom: 66px;
 	letter-spacing: 0.01em;
 
@@ -1096,7 +1123,7 @@ font-family: "Open Sans", Arial, sans-serif;
 	list-style: none;
 	padding-left: 35px;
 
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 40px;
 	letter-spacing: 0.006em;
@@ -1126,7 +1153,7 @@ font-family: "Open Sans", Arial, sans-serif;
 
 	display: inline-block;
     
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
@@ -1288,7 +1315,7 @@ ul.navigation-bottom {
 }
 
 .flex-about {
-	width: 580px;
+	width: 1160px;
 	height: 520px;
 	}
 
@@ -1349,7 +1376,7 @@ ul.navigation-bottom {
     
     display: block;
     
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     letter-spacing: 24px;
     font-weight: 300;
@@ -1480,7 +1507,7 @@ ul.navigation-bottom {
 
 
 .titles-cat h2 {
-	 font-family: "Gilroy", sans-serif;
+	 font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -1540,7 +1567,7 @@ ul.navigation-bottom {
 	display: block;
 	color: #000000;
 
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
@@ -1695,7 +1722,7 @@ background-color: #ffffff;
     padding-bottom: 24px;
     padding-top: 16px;
     font-size: 14px;
-    font-family: "Gilroy",sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
     text-align: center;
     color: rgba(0,0,0,0.2);
@@ -1723,7 +1750,7 @@ background-color: #ffffff;
 	display: block;
 	width: 200px;
 	text-align: center;
-	font-family: "Gilroy",sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
@@ -1745,7 +1772,7 @@ background-color: #ffffff;
 	text-align: center;
 	
 
-	font-family: "Open Sans",sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 36px;
@@ -1849,7 +1876,7 @@ color: #be9c22;
 }
 .pagination-list a {
 	display: block;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
@@ -1951,7 +1978,7 @@ letter-spacing: 0.24em;
 
 .modal-feedback p {
 	margin: 0;
-	font-family: 'Gilroy', sans-serif;
+	font-family: 'Gilroy', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -1995,7 +2022,7 @@ opacity: 0.5;
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"] {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2021,7 +2048,7 @@ opacity: 0.5;
 
 .feedback-area {
 	width: 100%;
-	font-family: 'Gilroy', sans-serif;
+	font-family: 'Gilroy', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -2032,7 +2059,7 @@ opacity: 0.5;
 .feedback-area-bar {
 
 	border: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -2051,18 +2078,18 @@ opacity: 0.5;
     min-width: 200px;
     position: relative;
     display: inline-block;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     letter-spacing: 0.2em;
     text-align: center;
 
-   /* padding: 9px 1px;
-    left: 3px;*/
+   
     border: 0;
  	cursor: pointer;
     z-index: 1;
+    background-color: transparent;
 
 }
 
@@ -2167,7 +2194,7 @@ opacity: 0.5;
 .filter-item legend {
 	padding-top:81px;
 
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -2241,7 +2268,7 @@ opacity: 0.5;
 
   width: 40px;
  /* padding: 8px 10px;*/
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   margin-left: -3px;
 
@@ -2273,7 +2300,7 @@ opacity: 0.5;
 
 
 .color-item legend {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -2289,7 +2316,7 @@ opacity: 0.5;
 }*/
 .color-item label {
 	position: relative;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 300;
@@ -2357,7 +2384,7 @@ opacity: 0.5;
 }
 
 .bluetooth-item legend {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 800;
@@ -2369,7 +2396,7 @@ opacity: 0.5;
 
 .bluetooth-item label {
 	position: relative;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 300;
@@ -2509,7 +2536,7 @@ opacity: 0.5;
 .selling-positions span{
 	display: inline-block;
 	width: 160px;
-	font-family: "Gilroy",sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
@@ -2619,7 +2646,7 @@ opacity: 0.5;
 
 .slider-container .slider-image2 {
 	padding-left: 36px;
-	/*padding-right: -45px;*/
+	padding-right: 138px;
 	position: relative;
 	top: -99px;
 }
@@ -2653,20 +2680,29 @@ opacity: 0.5;
 
 .slider-item > p {
 
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.01em;
 	font-weight: 300;
+
+	width: 481px;
 	padding-bottom: 42px;
 
+}
 
+.slider-item2 > p {
+	width: 460px;
+}
+
+.slider-item3 > p {
+width: 460px;
 }
 
 
 
 .slider-container h3 {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 56px;
 	letter-spacing: 0.015em;
@@ -2757,7 +2793,7 @@ opacity: 0.5;
 
 .slider-item-t-info span {
 	display: block;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 36px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
@@ -2767,7 +2803,7 @@ opacity: 0.5;
 }
 
 .slider-item-t-info p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 20px;
@@ -2793,7 +2829,7 @@ opacity: 0.5;
  	top:-125px;
  	right: 46px;
 
- 	font-family: "Gilroy", sans-serif;
+ 	font-family: "Gilroy", Arial, sans-serif;
  	font-size: 179.2px;
  	font-weight: 800;
  	line-height: 179.2px;
@@ -2866,7 +2902,7 @@ opacity: 0.5;
 	
     position: relative;
     display: inline-block;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -2920,7 +2956,7 @@ opacity: 0.5;
 }
 
 .right-slider-container h3 {
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
@@ -2932,7 +2968,7 @@ opacity: 0.5;
 }
 
 .right-slider-container p {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
@@ -3066,7 +3102,7 @@ top: 0px;
 
 .popup-header-hidden a {
 	margin:0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 36px;
@@ -3128,7 +3164,7 @@ b
 
 
 .search .search-input::placeholder {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
@@ -3154,7 +3190,7 @@ b
     border: 2px solid #000;
     outline: none;
     cursor: pointer;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
