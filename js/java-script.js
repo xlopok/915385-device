@@ -24,6 +24,7 @@
   linkFeedback.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupFeedback.classList.add("modal-feedback-open");
+
     
 
     if (storage) {
@@ -61,7 +62,8 @@
 
   linkMap.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popupMap.classList.add("modal-map-open")
+    popupMap.classList.add("modal-map-open");
+    closeMap.classList.add("button-z-index");
   });
 
   closeMap.addEventListener("click", function(evt) {

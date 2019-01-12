@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
     <title>Catalog</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/stylesheet-mini.css" rel="stylesheet">
    </head>
 
   <body>
@@ -40,26 +41,27 @@
     <!--Тут должен быть POPUP -->
     
     
-	        <ul class="popup-header-hidden popup-header-hidden-cat">
-	          <li class="popup-object">
+			 <ul class="popup-header-hidden popup-header-hidden-cat">
+
+	          <li class="popup-object popup-object1">
 	            <a href="#">Виртуальная реальность</a>
 	          </li>
-	          <li class="popup-object">
-	            <a href="catalog.html">Моноподы для селфи</a>
+	          <li class="popup-object popup-object2">
+	            <a href="catalog.html">Фитнес-браслеты</a>
 	          </li>
-	          <li class="popup-object">
-	            <a href="#">Экшн-камеры</a>
+	          <li class="popup-object popup-object3">
+	            <a href="#">Квадрокоптеры</a>
 	          </li>
-	          <li class="popup-object">
-	            <a href="#">Фитнес-браслеты</a>
+	          <li class="popup-object popup-object4">
+	            <a href="#">Моноподы для селфи</a>
 	          </li>
-	          <li class="popup-object smart-watch">
+	          <li class="popup-object smart-watch popup-object5">
 	            <a href="#">Умные часы</a>
 	          </li>
-	          <li class="popup-object">
-	            <a href="#">Квадрокоптеры</a>
+	          <li class="popup-object popup-object6">
+	            <a href="#">Экшн-камеры</a>
 	          </li> 
-	        </ul>
+       		 </ul>
      	</li>
     </ul>
    
@@ -101,11 +103,12 @@
 	         		<li><a class="sorting-price" href="#">По цене</a></li>
 	         		<li><a class="sorting-type" href="#">По типу</a></li>
 	         		<li><a class="sorting-popularity" href="#">По популярности</a></li>
+
 	         	</ul>
 
 	         	<div class="triangles">
-	         		<a class="triangle1" href="#"></a>
-	         		<a class="triangle2" href="#"></a>
+	         		<a class="triangle1" href="#"><span class="visually-hidden">Сортировка: от меньшего к большему</span></a>
+	         		<a class="triangle2" href="#"><span class="visually-hidden">Сортировка: от большего к меньшему</span></a>
 	         	</div>
 
 	        </div>
@@ -349,7 +352,7 @@
   	</ul>
 
     <p > 
-      <span class="footer-text-right" x-ms-format-detection="none">Тел.: +7 (495) 495-95-95</span>
+      <span class="footer-text-right">Тел.: +7 (495) 495-95-95</span>
     </p>
   	<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="htmlacademy.ru"></a>
   </div>
